@@ -1,0 +1,16 @@
+{
+  "name": "google-forms-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter client dev\" \"pnpm --filter server dev\""
+  },
+  "keywords": [],
+  "author": "Oleksandr Riabyi <collywolly9798@gmail.com>",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
