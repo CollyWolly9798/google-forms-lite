@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# MacOS files
+.DS_Store
+
+# Editor folders and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# pnpm store
+.pnpm-store/
+
+# Optional: coverage reports
+coverage/
+
+# Optional: Typescript build output
+*.tsbuildinfo
