@@ -1,5 +1,7 @@
 # Node modules
 node_modules/
+client/node_modules/
+server/node_modules/
 
 # Logs
 logs
@@ -10,6 +12,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Build output
+.idea/
 dist/
 build/
 
