@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"pnpm --filter client dev\" \"pnpm --filter server dev\""
+    "dev": "concurrently \"pnpm --filter client dev\" \"pnpm --filter server dev\"",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,css,scss,md}\""
   },
   "keywords": [],
   "author": "Oleksandr Riabyi <collywolly9798@gmail.com>",
   "license": "ISC",
   "packageManager": "pnpm@10.14.0",
   "devDependencies": {
-    "concurrently": "^9.2.0"
+    "concurrently": "^9.2.0",
+    "prettier": "^3.6.2"
   }
 }
