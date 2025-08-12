@@ -1,0 +1,7 @@
+query Forms {
+  forms {
+    id
+    title
+    description
+  }
+}

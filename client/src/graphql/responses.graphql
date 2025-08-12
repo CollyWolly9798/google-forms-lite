@@ -1,0 +1,9 @@
+query Responses($formId: ID!) {
+    responses(formId: $formId) {
+        id
+        answers {
+            questionId
+            text
+        }
+    }
+}
