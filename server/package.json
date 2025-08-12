@@ -2,10 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "ts-node-dev --respawn --transpile-only index.js"
   },
   "keywords": [],
   "author": "Oleksandr Riabyi <collywolly9798@gmail.com>",
@@ -17,6 +16,9 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@types/node": "^24.2.1",
+    "@types/uuid": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "~5.9.2"
   }
 }

@@ -6,11 +6,19 @@ export const typeDefs = gql`
     title: String!
     description: String
     questions: [Question!]!
+    responses: [Response!]!
+  }
+
+  enum QuestionType {
+    TEXT
+    CHECKBOX
+    RADIO
   }
 
   type Question {
     id: ID!
     text: String!
+    type: QuestionType!
   }
 
   type Response {
@@ -26,6 +34,8 @@ export const typeDefs = gql`
 
   input QuestionInput {
     text: String!
+    type: QuestionType!
+    options: [String]
   }
 
   input AnswerInput {
