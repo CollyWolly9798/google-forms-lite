@@ -1,0 +1,9 @@
+query getForms {
+    forms {
+        id
+        title
+        description
+    }
+}
+
+

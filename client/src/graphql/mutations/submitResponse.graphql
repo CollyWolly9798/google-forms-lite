@@ -1,4 +1,4 @@
-mutation SubmitResponse($formId: ID!, $answers: [AnswerInput]!) {
+mutation SubmitResponse($formId: ID!, $answers: [AnswerInput!]!) {
     submitResponse(formId: $formId, answers: $answers) {
         id
     }

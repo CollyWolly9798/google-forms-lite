@@ -2,5 +2,10 @@ mutation CreateForm($title: String!, $description: String!, $questions: [Questio
     createForm(title: $title, description: $description, questions: $questions) {
         id
         title
+        questions {
+            id
+            text
+            type
+        }
     }
 }

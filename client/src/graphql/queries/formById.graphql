@@ -1,0 +1,11 @@
+query FormById($id: ID!) {
+    form(id: $id) {
+        id
+        title
+        description
+        questions {
+            id
+            text
+        }
+    }
+}
