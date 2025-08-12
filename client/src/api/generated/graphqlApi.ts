@@ -74,6 +74,7 @@ export type QueryResponsesArgs = {
 export type Question = {
   __typename?: 'Question';
   id: Scalars['ID']['output'];
+  options?: Maybe<Array<Scalars['String']['output']>>;
   text: Scalars['String']['output'];
   type: QuestionType;
 };
@@ -126,7 +127,7 @@ export type FormQueryVariables = Exact<{
 }>;
 
 
-export type FormQuery = { __typename?: 'Query', form: { __typename?: 'Form', id: string, title: string, description?: string | null, questions: Array<{ __typename?: 'Question', id: string, text: string, type: QuestionType }> } };
+export type FormQuery = { __typename?: 'Query', form: { __typename?: 'Form', id: string, title: string, description?: string | null, questions: Array<{ __typename?: 'Question', id: string, text: string, type: QuestionType, options?: Array<string> | null }> } };
 
 export type FormByIdQueryVariables = Exact<{
   id: Scalars['ID']['input'];
@@ -201,6 +202,7 @@ export const FormDocument = `
       id
       text
       type
+      options
     }
   }
 }

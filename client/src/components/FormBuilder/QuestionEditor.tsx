@@ -26,7 +26,6 @@ export default function QuestionEditor({
     updateQuestion(index, { type: e.target.value as QuestionType });
   };
 
-  // Додаємо опції для Radio і Checkbox
   const addOption = () => {
     updateQuestion(index, { options: [...question.options, ''] });
   };

@@ -19,6 +19,7 @@ export const typeDefs = gql`
     id: ID!
     text: String!
     type: QuestionType!
+    options: [String!]
   }
 
   type Response {

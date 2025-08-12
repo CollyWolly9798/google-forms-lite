@@ -17,7 +17,7 @@ async function readJson(file, fallback) {
     const txt = await fs.readFile(file, 'utf8');
     return JSON.parse(txt);
   } catch (e) {
-    if (e.code === 'ENOENT') return fallback; // file not found → fallback
+    if (e.code === 'ENOENT') return fallback;
     throw e;
   }
 }
@@ -43,7 +43,7 @@ export const mutationResolvers = {
         id: generateId(),
         text: q.text,
         type: q.type,
-        options: q.options ?? null,
+        options: q.options ?? [],
       })),
     };
 
