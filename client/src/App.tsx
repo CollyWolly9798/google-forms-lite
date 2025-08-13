@@ -11,6 +11,9 @@ const FormFillerPage = lazy(
 const FormResponsesPage = lazy(
   () => import('./pages/FormResponses/FormResponsesPage.tsx'),
 );
+const NotFoundPage = lazy(
+  () => import('./pages/NotFoundPage/NotFoundPage.tsx'),
+);
 
 export default function App() {
   return (
@@ -22,6 +25,7 @@ export default function App() {
         <Route path="/forms/new" element={<FormBuilderPage />} />
         <Route path="/forms/:id/fill" element={<FormFillerPage />} />
         <Route path="/forms/:id/responses" element={<FormResponsesPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   );
