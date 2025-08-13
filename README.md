@@ -39,7 +39,7 @@
 ### Installation
 ```bash
 # Clone and install
-git clone <repository-url>
+git clone <https://github.com/CollyWolly9798/google-forms-lite>
 cd google-forms-lite
 pnpm install
 
